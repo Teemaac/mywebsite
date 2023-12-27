@@ -12,7 +12,7 @@ const Header = () => {
             {/* "Trevor McEachern" as a large, centered title */}
             <div className="text-center">
                 <button onClick={handleHomeClick} className="font-bold text-4xl md:text-6xl lg:text-6xl my-4 retro-3d-text">
-                    "TREVOR MCEACHERN"
+                    TREVOR MCEACHERN
                 </button>
             </div>
 

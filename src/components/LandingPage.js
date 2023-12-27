@@ -38,24 +38,27 @@ const LandingPage = () => {
       {/* Navbar component */}
       <Navbar />
 
-          <div className="timeline-container">
-                {/* Navigation Arrows */}
-                <button onClick={() => scrollToSection('past')} className="arrow left-arrow">&#8592;</button>
-                <button onClick={() => scrollToSection('future')} className="arrow right-arrow">&#8594;</button>
-
-                {/* Sections */}
-                <section id="past" className="timeline-section">
-                    {/* Content for the "Past" section */}
-                </section>
-
-                <section id="present" className="timeline-section">
-                    {/* Content for the "Present" section */}
-                </section>
-
-                <section id="future" className="timeline-section">
-                    {/* Content for the "Future" section */}
-                </section>
+      <div style={{ 
+            backgroundImage: `url(${backgroundImage})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center -55px',
+            height: '100vh', // Adjust as needed
+            width: '100%',
+            display: 'flex',
+            alignItems: 'center', // Center content vertically
+            justifyContent: 'flex-end', // Align content to the right
+            paddingLeft: '25%', // Shift content starting from the center
+        }}>
+           {/* Semi-translucent Rectangle */}
+           <div className="text-box">
+                {/* Your text goes here */}
+                <span className="retro-3d-text">Hi</span>,
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
+
+            {/* Rest of your main page content */}
+            {/* Content of your main page */}
+        </div>
 
     </div>
     
