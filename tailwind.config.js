@@ -10,6 +10,8 @@ module.exports = {
         'secondary': '#94a3b8',
         'darkgrey': '#1f2937',
         'darkgreen': '#166534',
+        'elecblue': '#0063b2',
+        'royalblue': '#4169E1',
       },
     },
   },
