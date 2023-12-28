@@ -1,0 +1,22 @@
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.github-project {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.github-project a {
+    font-size: 1.2rem;
+    color: #0366d6;
+    text-decoration: none;
+}
+
+.github-project p {
+    color: #333;
+}

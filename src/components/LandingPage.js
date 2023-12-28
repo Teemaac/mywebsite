@@ -51,10 +51,17 @@ const LandingPage = () => {
         }}>
            {/* Semi-translucent Rectangle */}
            <div className="text-box">
-                {/* Your text goes here */}
-                <span className="retro-3d-text">Hi</span>,
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p className="font-bold">
+                    SOLVE PROBLEMS AND MAXIMIZE IMPACT WITH:
+                    <ul>
+                        <li><span className="retro-3d-text">- TECHNOLOGY</span></li>
+                        <li><span className="retro-3d-text">- STRATEGY</span></li>
+                        <li><span className="retro-3d-text">- PEOPLE</span></li>
+                    </ul>
+                </p>
             </div>
+
+
 
             {/* Rest of your main page content */}
             {/* Content of your main page */}
