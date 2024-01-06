@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Navbar from './Header';
 
 const GitHubProjects = () => {
     const [repos, setRepos] = useState([]);
@@ -11,7 +12,9 @@ const GitHubProjects = () => {
     }, []);
 
     return (
+        
         <div>
+            <Navbar />
             <h2>Some of My Projects</h2>
             <div className="projects-container">
                 {repos.map(repo => (

@@ -49,17 +49,17 @@ const LandingPage = () => {
             justifyContent: 'flex-end', // Align content to the right
             paddingLeft: '25%', // Shift content starting from the center
         }}>
-           {/* Semi-translucent Rectangle */}
-           <div className="text-box">
-                <p className="font-bold">
-                    SOLVE PROBLEMS AND MAXIMIZE IMPACT WITH:
-                    <ul>
-                        <li><span className="retro-3d-text">- TECHNOLOGY</span></li>
-                        <li><span className="retro-3d-text">- STRATEGY</span></li>
-                        <li><span className="retro-3d-text">- PEOPLE</span></li>
-                    </ul>
-                </p>
-            </div>
+          {/* Semi-translucent Rectangle */}
+          <div className="text-box">
+              <p className="font-bold" style={{ fontStyle: 'italic' }}>
+                  <span>Working with</span>
+                  <span className="retro-3d-text"> people to build impactful solutions.</span>
+              </p>
+              <p className="font-bold" style={{ fontStyle: 'italic' }}>
+                  <span>Leveraging</span>
+                  <span className="retro-3d-text"> data, AI, and collaboration.</span>
+              </p>
+          </div>
 
 
 

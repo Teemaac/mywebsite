@@ -1,11 +1,12 @@
 import React from 'react';
+import { useNavigate, Link } from 'react-router-dom';
 
 const Header = () => {
-    const handleHomeClick = () => {
-        window.location.href = '/'; // Redirect to the homepage
-    };
+    const navigate = useNavigate();
 
-    
+    const handleHomeClick = () => {
+        navigate('/'); // Redirect to the homepage using React Router
+    };
 
     return (
         <header className="bg-primary text-darkgrey">
@@ -16,19 +17,15 @@ const Header = () => {
                 </button>
             </div>
 
-            {/* Navigation Links */}
             <div className="container mx-auto p-5 flex justify-center items-center">
                 <nav className="flex gap-x-8">
-                    <a href="#resume" className="hover:text-secondary text-xl font-bold">RESUME</a>
-                    <a href="#code" className="hover:text-secondary text-xl font-bold">PORTFOLIO</a>
-                    <a href="#fun-facts" className="hover:text-secondary text-xl font-bold">FUN FACTS</a>
-                    <a href="#contact" className="hover:text-secondary text-xl font-bold">CONTACT</a>
+                    <Link to="/resume" className="hover:text-secondary text-xl font-bold">RESUME</Link>
+                    <Link to="/portfolio" className="hover:text-secondary text-xl font-bold">PORTFOLIO</Link>
+                    <Link to="/fun-facts" className="hover:text-secondary text-xl font-bold">FUN FACTS</Link>
+                    <Link to="/contact" className="hover:text-secondary text-xl font-bold">CONTACT</Link>
                 </nav>
             </div>
         </header>
-
-
-        
     );
 };
 
